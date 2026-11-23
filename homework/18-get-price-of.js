@@ -6,8 +6,10 @@
 // - Stop the loop as soon as you find it.
 
 function getPriceOf(products, name) {
-  // your code
+const pN = products.find((n) => n.name === name);
+return pN ? pN.price : null;
 }
+
 
 const products = [
   { name: "Pen", price: 2 },
