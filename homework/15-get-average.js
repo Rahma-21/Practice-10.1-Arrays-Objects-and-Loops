@@ -5,8 +5,16 @@
 // - Empty array: return 0.
 
 function getAverage(numbers) {
-  // your code
-}
+  let total =0;
+    if(numbers.length === 0) return 0;
+
+  for(const i of numbers){
+    total+=i;
+    
+  }
+   const avg=total/numbers.length;
+   return avg; 
+  }
 
 // Expected output:
 console.log(getAverage([2, 4, 6]));  // 4

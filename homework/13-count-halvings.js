@@ -6,7 +6,17 @@
 // - If start is already 1 or less, the answer is 0.
 
 function countHalvings(start) {
-  // your code
+ 
+  let total = 0;
+  let num=start;
+
+  if(start === 1 || start<1) return 0;
+
+  while(num > 1 ){
+    total++;
+    num=num / 2;
+  }
+  return total;
 }
 
 // Expected output:

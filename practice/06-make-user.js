@@ -8,11 +8,13 @@ function makeUser(name, age) {
   let isAdult = false;
   if(age > 17) isAdult: return;
   const user ={name: name, age: age, isAdult: true};
-   const user ={name: name, age: age, isAdult};
+
+  
+  //  const user ={name: name, age: age, isAdult};
 
 
   // طريقة حل اخر
-  // return{name, name as name
+  // return{name,        <---name as name
   // age,
   // isAdult: age > 17;} 
 
