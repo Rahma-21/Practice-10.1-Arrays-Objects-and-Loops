@@ -5,7 +5,10 @@
 // - addAndCount(["a", "b"], "c") returns 3.
 
 function addAndCount(items, newItem) {
-  // your code
+  // items.push(newItem);
+  // return items.length;
+  return items.push(newItem);
+ 
 }
 
 // Expected output:

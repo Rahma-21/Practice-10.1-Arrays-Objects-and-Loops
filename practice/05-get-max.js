@@ -5,7 +5,14 @@
 // - Empty array: return null.
 
 function getMax(numbers) {
-  // your code
+  let biggest = numbers[0];
+  for(const b of numbers){
+    if(b > biggest){
+      biggest=b;
+    }
+  }
+  return biggest || null;
+  
 }
 
 // Expected output:

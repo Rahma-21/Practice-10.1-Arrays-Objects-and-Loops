@@ -5,7 +5,8 @@
 // - Empty array: return null.
 
 function getLastItem(items) {
-  // your code
+  // return items[items.length-1];
+  return items.pop() || null; // يعطينا ويحذف اخر data
 }
 
 // Expected output:

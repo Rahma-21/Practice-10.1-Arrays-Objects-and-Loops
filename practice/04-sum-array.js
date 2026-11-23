@@ -5,7 +5,11 @@
 // - Empty array: return 0.
 
 function sumArray(numbers) {
-  // your code
+  let total=0;
+  for(const n of numbers){
+    total+=n;
+  }
+return total;
 }
 
 // Expected output:

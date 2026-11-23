@@ -5,8 +5,11 @@
 // - Total = the sum of price * qty of every product.
 
 function getTotalPrice(products) {
-  // your code
-}
+  let total = [0];
+  for(const t of products){
+    total+= t.price * t.qty;
+  }
+}return total;
 
 // Expected output:
 console.log(getTotalPrice([{ name: "Pen", price: 2, qty: 3 }, { name: "Book", price: 10, qty: 1 }]));  // 16
